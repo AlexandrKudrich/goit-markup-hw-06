@@ -432,22 +432,11 @@
          transition-property: opacity, visibility;
          transition-duration: 250ms;
          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-         /* transition-property: background-color;
-         opacity: 1;
-         visibility: visible; */
       
       background-color: rgba(0, 0, 0, 0.2);
    }
 
-  /* .backdrop{
-   transition-duration: 5550ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: background-color;
-            opacity: 1;
-            visibility: visible; 
-            
-  } */
+
 
       .backdrop.is-hidden {
 
@@ -975,9 +964,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 
       .add {
          width: 206px;
-        
-         
-         
+        margin-right: 93px;
       }
    
       .add-title {
@@ -1030,11 +1017,68 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
    
          fill: #FFFFFF;
          
-   
       }
 
 
+                        /* Footer form E-mail subscriber */
+.subscribe-title {
+   font-size: 14px;
+   line-height: 1.14;
+   text-transform: uppercase;
 
+   margin-bottom: 20px;
+
+   color: #FFFFFF;
+}
+
+.subscribe-form {
+   display: flex;
+}
+
+.subscribe-input {
+   width: 358px;
+   height: 50px;
+
+   color: #fff;
+
+   margin-right: 10px;
+   padding: 15px 16px;
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   border-radius: 4px;
+   background-color: transparent;
+}
+
+.subscribe-button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   padding-top: 10px;
+   padding-right: 28px;
+   padding-bottom: 10px;
+   padding-left: 29px;
+
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.88;
+   letter-spacing: 0.06em;
+
+   color: #FFFFFF;
+
+   background-color: var(--accent-color);
+   border: none;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.subscribe-icon {
+   margin-left: 10px;
+}
+
+      
+
+                     /* and subscriber  */
 
                 /* Portfolio_Page_CSS */
 
