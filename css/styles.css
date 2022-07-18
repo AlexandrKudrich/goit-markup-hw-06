@@ -338,7 +338,6 @@
 
  .hero{
 
-    /* background-color: #2F303A; */
     text-align: center;
  }
 
@@ -450,6 +449,8 @@
 
     .modal {
       
+      
+      
       position: absolute;
 
        top: 50%;
@@ -460,31 +461,227 @@
       min-width: 528px;
       min-height: 581px;
 
+         padding-top: 40px;
+         padding-bottom: 40px;
+         padding-left: 41px;
+         padding-right: 39px;
+
       background-color: #FFFFFF;
       border-radius: 4px;
  
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+      
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
     }
 
 
     
     .close-but{
+
+         cursor: pointer;
+         font-family: inherit;
+         border: transparent;
+         outline: none;
+
       
-      width: 30px;
-      height: 30px;
-      
-      border: 1px solid rgba(0, 0, 0, 0.1);      
-      border-radius: 20px;
-      color: #000000;
-      background-color: white;
-      
-      
-      margin-left: 490px; 
-       text-align: center;
-      margin-top: 8px;
-      margin-right: 8px; 
-      
+         position: absolute;
+            top: 8px;
+            right: 8px;
+         
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+         
+            background-color: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+   
     }
+
+       .close-cross {
+          width: 18px;
+          height: 18px;
+   
+          transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+       }
+     
+       .close-but:hover,
+       .close-but:focus{
+         fill: #2196F3;
+       }
+
+
+
+                  /*  Modal information text  */
+
+.modal-title {
+   font-size: 20px;
+   line-height: 1.15;
+   text-align: center;
+
+   margin-bottom: 12px;
+
+   color: var(--title-text-color);
+}
+
+.modal-form {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+   width: 449px;
+}
+
+.form-item+.form-item {
+   margin-top: 10px;
+}
+
+.form-label {
+   font-size: 12px;
+   line-height: 1.17;
+   letter-spacing: 0.01em;
+
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-box {
+   display: inline-block;
+   position: relative;
+}
+
+.modal-icon {
+   position: absolute;
+   top: 50%;
+   left: 12px;
+
+   transform: translateY(-50%);
+
+}
+
+.modal-input {
+   width: 448px;
+   height: 40px;
+   padding: 0;
+   padding-left: 42px;
+
+   border: 1px solid rgba(33, 33, 33, 0.2);
+   border-radius: 4px;
+
+   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-label:focus-within .modal-input {
+   outline: none;
+   border: 1px solid var(--accent-color);
+}
+
+.form-item:focus-within .form-label {
+   fill: var(--accent-color);
+}
+
+.form-item.comment {
+   margin-bottom: 20px;
+}
+
+.modal-input.comment-input {
+   height: 120px;
+   padding: 12px 16px;
+
+   resize: none;
+}
+/*  */
+::placeholder {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.label-check {
+    height: 24px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    font-size: 14px;
+    line-height: 1.71px;
+}
+
+.check-icon {
+    margin-right: 7px;
+
+    fill: #fff;
+    border: var(--title-text-color) solid 2px;
+    border-radius: 4px;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-cneck:checked + .check-icon {
+    border: var(--accent-color) solid 2px;
+    background-color: var(--accent-color);    
+}
+
+.input-cneck {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.check-link{
+   color: var(--accent-color);
+}
+
+.modal-form .form-button {    
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-right: 55px;
+    padding-bottom: 10px;
+    padding-left: 56px;
+
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-button .button-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;        
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;    
+}
+
+.modal-form .form-button:hover, 
+.modal-form .form-button:focus {
+    background-color: #188CE8;    
+}
+
+
+                  /* End modal Infor */
     
                     /* Section_About */
 
@@ -1026,7 +1223,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 
 
 
-                        
+
 .subscribe-title {
    font-size: 14px;
    line-height: 1.14;
