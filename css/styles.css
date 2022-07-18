@@ -480,7 +480,7 @@
     
     .close-but{
 
-         cursor: pointer;
+        
          font-family: inherit;
          border: transparent;
          outline: none;
@@ -498,7 +498,7 @@
             height: 30px;
             cursor: pointer;
          
-            background-color: #fff;
+            background-color: #ffffff;
             border: 1px solid rgba(0, 0, 0, 0.1);
             border-radius: 50%;
    
@@ -513,7 +513,7 @@
      
        .close-but:hover,
        .close-but:focus{
-         fill: #2196F3;
+         fill: var(--accent-color);
        }
 
 
@@ -521,6 +521,7 @@
                   /*  Modal information text  */
 
 .modal-title {
+
    font-size: 20px;
    line-height: 1.15;
    text-align: center;
@@ -529,7 +530,10 @@
 
    color: var(--title-text-color);
 }
+                        /* Modal Form */
 
+
+                        
 .modal-form {
    display: flex;
    flex-direction: column;
